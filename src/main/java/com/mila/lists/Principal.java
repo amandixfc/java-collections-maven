@@ -7,6 +7,14 @@ public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		List<Student> studentList = StudentList.CreateList();
+		
+		List<Student> studentSpainList = StudentList
+				.getStudentsByCountry(studentList, "Spain");
+		StudentList.loopThroughList(studentSpainList);
+		
+		/**
 		List<Student> studentList = new ArrayList<Student>();
 		
 		Student student1 = new Student();
@@ -24,7 +32,7 @@ public class Principal {
 			System.out.println(s.getId());
 			System.out.println(s.getName());
 		}
-		
+		*/
 	}
 
 }
